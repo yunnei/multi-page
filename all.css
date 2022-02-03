@@ -1,0 +1,401 @@
+/* CSS reset start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset end */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 微軟正黑體, "Microsoft JhengHei", sans-serif;
+}
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.menu {
+    background: rgba(74, 74, 74, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.menu h1 a {
+    background-image: url(images/header_logo.png);
+    display: block;
+    width: 170px;
+    height: 36px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a {
+    padding: 22px 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 16px;
+}
+.menu li a:hover {
+    color: #07b88c;
+    border-bottom: 6px solid #0c9;
+}
+.banner {
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+.banner h2 {
+    font-size: 48px;
+    line-height: 1.6;
+}
+.btn {
+    background: #0c9;
+    border-radius: 4px;
+    padding: 14px 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+    border: none;
+}
+.btn:hover {
+    color: #0c9;
+    background: #fff;
+}
+.btn:active {
+    box-shadow: inset 0 0 4px #949494;
+}
+.btn span {
+    margin-left: 28px;
+}
+.index-content {
+    padding: 0px 40px;
+}
+.content h3 {
+    font-size: 36px;
+    color: #0c9;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+.content span {
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.contact {
+    max-width: 1024px;
+    margin-top: 60px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+}
+.contact h4 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.footer {
+    background: #323228;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 40px;
+}
+.footer div {
+    text-align: right;
+    color: #9b9b9b;
+}
+.footer ul {
+    display: flex;
+}
+.footer li {
+    margin-left: 18px;
+}
+
+/* index */
+.index-banner {
+    background-image: url(images/banner_photo.png);
+}
+.index-banner h2 {
+    color: #0c9;
+    margin-left: 38px;
+    margin-bottom: 52px;
+}
+.index-banner h2 span {
+    color: #fff;
+}
+.course {
+    margin-top: 60px;
+}
+.course div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course div a {
+    color: #0c9;
+    text-decoration: none;
+    border: 1px solid #0c9;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+.course div a:hover {
+    color: #fff;
+    background: #0c9;
+}
+.course ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+.course li {
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 20px;
+    box-shadow: 0 2px 4px #aaaaaa;
+}
+.course li:hover {
+    box-shadow: 0 0px 10px #aaaaaa;
+    transition: 1s;
+}
+.course li img {
+    margin-bottom: 12px;
+}
+.course li h4 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.course li p {
+    color: #9b9b9b;
+    line-height: 1.4;
+}
+.comparision {
+    margin-top: 60px;
+}
+.comparision table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.comparision thead {
+    background: #ebebeb;
+}
+.comparision th, .comparision td {
+    padding: 16px;
+}
+.comparision td {
+    border-bottom: 1px solid #ebebeb;
+}
+.text-green {
+    color: #0c9;
+}
+.index-contact {
+    padding: 152px 44px 60px;
+}    
+.contact form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contact form input {
+    border-radius: 4px;
+    border: none;
+}
+.contact-info {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 16px 20px;
+    font-size: 16px;
+}
+
+/* course */
+.course-banner {
+    background-image: url(images/all.css.png);
+}
+.course-banner h2 {
+    color: #fff;
+    margin-left: 38px;
+}
+.course-banner p {
+    color: #0c9;
+    font-size: 24px;
+    margin-left: 38px;
+    margin-bottom: 52px;
+}
+.course-banner div {
+    position: absolute;
+    top: 112px;
+    right: 56px;
+}
+.course-banner img {
+    margin-left: 32px;
+}
+.course-content {
+    padding: 0 196px;
+}
+.course-content div {
+    margin-top: 56px;
+}
+.teacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teacher li {
+    list-style-type: disc;
+    color: #9b9b9b;
+    line-height: 1.5;
+    padding-left: 24px;
+}
+.advantage li {
+    list-style-type: decimal;
+    margin-left: 24px;
+    line-height: 1.5;
+    padding-left: 24px;
+}
+.syllabus li{
+    padding: 16px 36px;
+}
+.syllabus li:nth-child(odd) {
+    background: #ebebeb;
+}
+.syllabus li:nth-child(even) {
+    color: #9b9b9b;
+}
+.course-contact {
+    align-items: flex-end;
+    padding: 152px 200px;
+}
+
+/* faq */
+.faq-banner {
+    align-items: center;
+    background-image: url(./images/banner_photo_faq.png);
+}
+.faq-banner h2 {
+    color: #fff;
+}
+.faq-banner p {
+    font-size: 24px;
+    color: #0c9;
+}
+.faq-banner div {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+}
+.faq-banner input {
+    width: 560px;
+    font-size: 28px;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+}
+.faq-banner a {
+    font-size: 26px;
+    padding: 12px;
+    background: #fff;
+    line-height: 1.5;
+    border-radius: 0 8px 8px 0;
+}
+.faq-content {
+    padding: 60px 120px 0;
+}
+.question, .next {
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+.question h4 {
+    font-size: 20px;
+}
+.question p {
+    color: #9b9b9b;
+}
+.question a {
+    text-decoration: none;
+    color: #0c9;
+}
+.question ul, .next ul {
+    margin-bottom: 32px;
+    padding-left: 36px;
+    color: #9b9b9b;
+}
+.question li, .next li {
+    padding-left: 28px;
+}
+.payment .question ul {
+    list-style: decimal;
+    list-style-position: outside;
+}
+.refund .question ul, .next ul {
+    list-style: disc;
+    list-style-position: outside;
+}
+.faq-contact {
+    padding: 130px 40px 60px;
+}
+.faq-contact textarea {
+    resize: none;
+    height: 200px;
+    border: none;
+    border-radius: 4px;
+}
